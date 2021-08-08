@@ -45,8 +45,7 @@ setInterval(() => {
         console.log(`${events.length} sales in the last minute...`);
 
         _.each(events, (event) => {
-            //return formatAndSendTweet(event);
-            return 0;
+            return formatAndSendTweet(event);
         });
     }).catch((error) => {
         console.error(error);
